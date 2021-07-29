@@ -27,7 +27,30 @@
                   <p class="text-white">Computer-controlled digital transistorized with electronic advance</p>
                   <h1  class="text-white">Honda CBR 300R</h1>
                   <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                  <button class="btn btn-warning">Purchase</button>
+                  
+                  <button type="button" class="btn btns text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Honda CBR 300R
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Do you really want to buy this item? Your choice is awsome, just click confirm, you will be redirect to a purchase form. Otherwise, click close.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirm</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="cols-12 col-lg-5">
                     <img class="img-fluid" src="images/header-bike.png" alt="">
@@ -43,18 +66,18 @@
         <section class="container my-5">
             <div class="my-5">
               <h1 class="text-center">Featured Bikes 2021</h1>
-              <p class="text-center text-danger">Best Bike Collection</p>
+              <p class="text-center" id="different-color">Best Bike Collection</p>
             </div>
 
             <div class="row gy-5">
+              <div class="cols-12 col-lg-4"><img id="grayscale" style="width: 288px;" src="images/feature-bike.jpg" alt=""></div>
               <div class="cols-12 col-lg-4"><img style="width: 288px;" src="images/feature-bike.jpg" alt=""></div>
-              <div class="cols-12 col-lg-4"><img style="width: 288px;" src="images/feature-bike.jpg" alt=""></div>
-              <div class="cols-12 col-lg-4"><img style="width: 288px;" src="images/feature-bike.jpg" alt=""></div>
+              <div class="cols-12 col-lg-4"><img id="grayscale" style="width: 288px;" src="images/feature-bike.jpg" alt=""></div>
             </div>
         </section>
         <!-- HAPPY CLIENTS -->
         <section class="container">
-          <h1 class="text-center mb-5">Happy <span class="text-warning">Client Says</span></h1>
+          <h1 class="text-center mb-5">Happy <span id="different-color">Client Says</span></h1>
           <div class="row d-flex justify-content-center">
             <div class="cols-12 col-lg-4 mx-4" style="height: 478px; width: 323px;">
               <div class="card d-flex align-items-center">
@@ -117,7 +140,7 @@
         </section>
         <!-- FREQUENTLY ASKED QS -->
         <section class="container my-5">
-          <h1 class="text-center my-5">Frequently Asked <span class="text-warning">Questions</span></h1>
+          <h1 class="text-center my-5">Frequently Asked <span id="different-color">Questions</span></h1>
           <div class="row d-flex align-items-center">
             <div class="cols-12 col-lg-6">
               <img class="img-fluid w-75" src="images/faq.png" alt="">
@@ -190,8 +213,8 @@
         BONUS PART
     ----------------->
         <!-- OUR STORY -->
-        <section class="container bg-info">
-          <div><h1 class="text-center">Some Awsome<span class="text-danger"> Old Bikes</span></h1>
+        <section class="container">
+          <div><h1 class="text-center">Some Awsome<span id="different-color"> Old Bikes</span></h1>
             <p class="text-center">Wanna see in real life? Visit Our Office</p>
           </div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -217,7 +240,7 @@
             </div>
         </section>
         <!-- DISCOUNT FORM -->
-        <section class="container bg-dark d-flex justify-content-center align-items-center rounded-3" style="height: 400px;">
+        <section id="footer-bg" class="container d-flex justify-content-center align-items-center rounded-3" style="height: 400px;">
           <div>
             <h3 class="text-white">Create an account to get extra 2% discount</h3>
           <P class="text-white">Your email must be valid</P>
@@ -225,7 +248,7 @@
           <br>
           <input class="form-control" type="password" placeholder="password" name="" id=""> 
           <br>
-          <button class="btn btn-danger">Create Account</button>
+          <button class="btn text-white" id="footer-btn">Create Account</button>
           </div>
         </section>
         
